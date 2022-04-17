@@ -6,24 +6,34 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Waxom free psd template" />
 		<meta name="keywords" content="free, psd,template, responsive" />
-
+    <!-- fontawesome -->
 		<script
 			src="https://kit.fontawesome.com/0ec9f69e50.js"
 			crossorigin="anonymous"
 		></script>
+    <!-- google font -->
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 		<script>
 			WebFont.load({
 				google: {
-					families: ['Montserrat:300,400,700', 'Raleway:300,400,500,700,800'],
+					families: [
+						'Montserrat:300,400,700',
+						'Raleway:300,400,500,600,700,800',
+					],
 				},
 			});
 		</script>
+    <!-- swiper -->
 		<link
 			rel="stylesheet"
 			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
 		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
+  <!-- bxslider -->
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 		<link rel="stylesheet" href="./css/default.css" />
 		<script src="./js/script.js" defer></script>
 		<title>Waxom free psd template</title>
@@ -137,42 +147,444 @@
 
 			<!-- realization -->
 			<section class="realization">
-				<div class="container"></div>
+				<div class="container">
+					<h3 class="content_tt">Waxom is Realization of your Ideas.</h3>
+					<p class="content_desc">
+						Investigationes demonstraverunt lectores legere me lius quod ii
+						legunt saepius. Claritas est etiam processus dynamicus, qui sequitur
+						mutationem consuetudium.
+					</p>
+					<img src="./images/ideas.png" alt="ideas image" />
+				</div>
 			</section>
 
 			<!-- text_boxes -->
 			<section class="text_boxes">
-				<div class="container"></div>
+				<div class="container clearfix">
+					<div class="box_contents">
+						<h4><span>Waxom</span> Multipurpose WordPress Theme</h4>
+						<p>Don't Forget to Rate the Template. Thanks so much!</p>
+					</div>
+					<a href="" class="btn">Purchase Now</a>
+				</div>
 			</section>
 
 			<!-- latest_projects -->
-			<section class="latest_projects container"></section>
+			<section class="latest_projects container">
+				<h3 class="content_tt">Our Latest Projects.</h3>
+				<p class="content_desc">
+					Investigationes demonstraverunt lectores legere me lius quod ii legunt
+					saepius. Claritas est etiam processus dynamicus, qui sequitur
+					mutationem consuetudium.
+				</p>
+				<div class="project_wrap">
+					<input
+						type="radio"
+						value="all"
+						id="filter-all"
+						name="filter"
+						checked
+					/>
+					<label for="filter-all">All</label>
+
+					<input
+						type="radio"
+						value="Web Design"
+						id="filter-web"
+						name="filter"
+					/>
+					<label for="filter-web">Web Design</label>
+
+					<input
+						type="radio"
+						value="Mobile Design"
+						id="filter-mobile"
+						name="filter"
+					/>
+					<label for="filter-mobile">Mobile Design</label>
+
+					<input
+						type="radio"
+						value="illustration"
+						id="filter-illust"
+						name="filter"
+					/>
+					<label for="filter-illust">illustration</label>
+
+					<input
+						type="radio"
+						value="Photography"
+						id="filter-photo"
+						name="filter"
+					/>
+					<label for="filter-photo">Photography</label>
+
+					<ul class="project_list clearfix">
+						<li class="photo">
+							<div class="imgwrap">
+								<img src="./images/project_01.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Claritas Etiam Processus</h4>
+								<p>Photography, Nature</p>
+							</div>
+						</li>
+
+						<li class="mobile">
+							<div class="imgwrap">
+								<img src="./images/project_02.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Quam Nutamus Farum</h4>
+								<p>Graphic Design, Mock-Up</p>
+							</div>
+						</li>
+
+						<li class="photo">
+							<div class="imgwrap">
+								<img src="./images/project_03.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Usus Legentis Videntur</h4>
+								<p>Photography, Holiday</p>
+							</div>
+						</li>
+
+						<li class="web">
+							<div class="imgwrap">
+								<img src="./images/project_04.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Claritas Etiam Processus</h4>
+								<p>Photography, Nature</p>
+							</div>
+						</li>
+
+						<li class="illust">
+							<div class="imgwrap">
+								<img src="./images/project_05.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Claritas Etiam Processus</h4>
+								<p>Graphic Design, Mock-Up</p>
+							</div>
+						</li>
+
+						<li class="web">
+							<div class="imgwrap">
+								<img src="./images/project_06.jpg" alt="project 01 image" />
+								<div class="hover_contents">
+									<a href=""><i class="fa-solid fa-link"></i></a>
+									<a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+								</div>
+							</div>
+							<div class="contents">
+								<h4>Usus Legentis Videntur</h4>
+								<p>Photography, Holiday</p>
+							</div>
+						</li>
+					</ul>
+					<p class="load_more">
+						<a href="" class="btn"> load more</a>
+					</p>
+				</div>
+			</section>
 
 			<!-- video -->
-			<section class="video"></section>
+			<section class="video">
+				<div class="contents">
+					<a class="icon" href="#overlay"
+						><i class="fa-regular fa-circle-play"></i
+					></a>
+					<h3 class="content_tt">Waxom Video Presentation</h3>
+					<p class="content_desc">
+						Investigationes demonstraverunt lectores legere me lius quod ii
+						legunt saepius, qui sequitur mutationem consuetudium.
+					</p>
+					<span>03:26</span>
+				</div>
+				<div id="overlay">
+					<div class="inner">
+            <div id="player"></div>
+            <a href="" class="close">X</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
 			<!-- excellent_mobile -->
-			<section class="excellent_mobile container"></section>
+			<section class="excellent_mobile">
+        <div class="container clearfix">
+          <img src="./images/excellent_mobile.png" alt="excellent mobile"/>
+          <div class="contents">
+            <h3 class="content_tt">Excellent for Mobile Devices.</h3>
+            <p class="content_desc">
+              Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
+            </p>
+            <ul>
+              <li><span>bullet</span>Nam liber tempor cum soluta nobis eleifend option;</li>
+              <li><span>bullet</span>Option congue nihil imperdiet doming id quod mazim placerat facer;
+              </li>
+              <li><span>bullet</span>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+              <li><span>bullet</span>nvestigationes demonstraverunt lectores</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
 			<!-- counters -->
 			<section class="counters">
-				<div class="container"></div>
+				<div class="container">
+          <ul>
+            <li>
+              <span class="icon client">client</span>
+              <h3 class="counter" data-number="3597">3597</h3>
+              <h4>Satisfied Clients</h4>
+              <span class="bar"></span>
+            </li>
+            <li>
+              <span class="icon coffee">coffee</span>
+              <h3 class="counter" data-number="207">207</h3>
+              <h4>Cups of coffees</h4>
+              <span class="bar"></span>
+            </li>
+            <li>
+              <span class="icon post">post</span>
+              <h3 class="counter" data-number="2500">2500</h3>
+              <h4>Blog posts</h4>
+              <span class="bar"></span>
+            </li>
+            <li>
+              <span class="icon like">like</span>
+              <h3 class="counter" data-number="773">773</h3>
+              <h4>Likes</h4>
+              <span class="bar"></span>
+            </li>
+            <li>
+              <span class="icon launched">launched</span>
+              <h3 class="counter" data-number="900">900</h3>
+              <h4>We launched</h4>
+              <span class="bar"></span>
+            </li>
+          </ul>
+        </div>
 			</section>
 
 			<!-- recent_post -->
-			<section class="recent_post container"></section>
+			<section class="recent_post container">
+        <h3 class="content_tt">Recent Posts</h3>
+				<p class="content_desc">
+					Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
+				</p>
+        <ul class="post_list">
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/iloveimg-resized/surface-LCOnczVeFio-unsplash.jpg" alt="recent post"/>
+              <div class="post_date">
+                <span class="date">12</span>
+                <span class="month">Jan.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/iloveimg-resized/surface-oFaxrouv1_0-unsplash.jpg" alt="recent post2"/>
+              <div class="post_date">
+                <span class="date">10</span>
+                <span class="month">Jan.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/iloveimg-resized/surface-rb8vfIP7Ges-unsplash.jpg" alt="recent post3"/>
+              <div class="post_date">
+                <span class="date">07</span>
+                <span class="month">Jan.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/iloveimg-resized/tezos-Lh3HAnw8RtU-unsplash.jpg" alt="recent post4"/>
+              <div class="post_date">
+                <span class="date">30</span>
+                <span class="month">Dec.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/recent_post_02.jpg" alt="recent post5"/>
+              <div class="post_date">
+                <span class="date">29</span>
+                <span class="month">Dec.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+          <li>
+            <div class="recent_img_wrap">
+              <img src="./images/iloveimg-resized/windows-jv-vogT7hkU-unsplash.jpg" alt="recent post6"/>
+              <div class="post_date">
+                <span class="date">12</span>
+                <span class="month">Dec.</span>
+              </div>
+              <div class="hover_contents">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </div>
+            </div>
+            <div class="post_details">
+              <h4>Lorem ipsum dolor sit amet</h4>
+              <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+              <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+            </div>
+          </li>
+        </ul>
+        <p class="controls">
+          <span class="prev"></span>
+          <span class="next"></span>
+        </p>
+        
+      </section>
 
 			<!-- partners -->
 			<section class="partners">
-				<div class="container"></div>
+				<div class="container">
+          <ul class="clearfix">
+            <li><a href=""><img src="./images/partners_barbers.png" alt="barbers"/></a></li>
+            <li><a href=""><img src="./images/partners_delicious.png" alt="delicious"/></a></li>
+            <li><a href=""><img src="./images/partners_desingers.png" alt="designer"/></a></li>
+            <li><a href=""><img src="./images/partners_royal.png" alt="royal"/></a></li>
+          </ul>
+        </div>
 			</section>
 		</main>
 		<footer>
 			<div class="footer_top">
-				<div class="container"></div>
+				<div class="container clearfix">
+          <div class="col-one-forth">
+            <h2 class="footer_logo"><a href="">footer logo</a></h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+            <a href="">Read More<span><i class="fa-solid fa-caret-right"></i></span></a>
+          </div>
+          <div class="col-one-forth">
+            <h3>Recent Posts</h3>
+            <ul class="footer_list">
+              <li>
+                <span class="post_date">September 08, 2022</span>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+              </li>
+              <li>
+                <span class="post_date">September 08, 2022</span>
+                <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+              </li>
+              <li>
+                <span class="post_date">September 08, 2022</span>
+                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-one-forth">
+              <h3>Our Twitter</h3>
+            <ul class="footer_list">
+              <li>
+                <p><span class="twitter_id"> &#64;waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                <span class="post_date">3 mins ago</span>
+              </li>
+              <li>
+                <p><span class="twittter_id"> 
+                  Mirum est <span class="twitter_id">&#35;envato </span>notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum
+                </p>
+                <span class="post_date">5 hours ago</span>
+              </li>
+              <li>
+                <p>Soluta nobis option <span > bit.ly/1Hniso7</span></p>
+                <span class="post_date">20 days ago</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-one-forth">
+              <h3>Dribbble Widget</h3>
+            <ul class="dribble clearfix">
+              <li><a href=""><img src="./images/dribble_01.jpg" alt="dribbleimg01"/></a></li>
+              <li><a href=""><img src="./images/dribble_02.jpg" alt="dribbleimg02"/></a></li>
+              <li><a href=""><img src="./images/dribble_03.jpg" alt="dribbleimg03"/></a></li>
+              <li><a href=""><img src="./images/dribble_04.jpg" alt="dribbleimg04"/></a></li>
+            </ul>
+          </div>
+        </div>
 			</div>
 			<div class="footer_bottom">
-				<div class="container"></div>
+				<div class="container clerfix">
+          <div class="copy">
+            <p>
+              Copyright &copy; 2022 <span>Waxom</span> <span class="devider"> &#124;</span><a href="">Privacy Policy</a> <span class="devider"> &#124;</span><a href="">FAQ </a><span class="devider"> &#124;</span> <a href="">Support</a> 
+            </p>
+          </div>
+          <div class="designer">
+            <p>Designed by <a href="">ThemeFire</a><span class="devider"> &#124;</span>Only on <a href="">Envato Market</a> </p>
+          </div>
+        </div>
 			</div>
 		</footer>
 	</body>
