@@ -98,6 +98,9 @@ header nav ul li a {
 .main-menu li:last-child {
 	margin-right: 60px;
 }
+.main-menu li a {
+	text-decoration: none;
+}
 .top-icons li {
 	margin-right: 25px;
 }
@@ -107,6 +110,9 @@ header nav ul li a {
 header nav ul li a:hover,
 header nav ul li a.active {
 	color: #c7b299;
+}
+.toggle {
+	display: none;
 }
 
 .slider_list li {

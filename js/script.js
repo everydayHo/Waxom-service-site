@@ -95,3 +95,11 @@ $(document).ready(function () {
 		prevSelector: '.controls .prev',
 	});
 });
+
+// toggle
+const toggleBtn = document.querySelector('.toggle');
+const navbarMenu = document.querySelector('.main-menu');
+
+toggleBtn.addEventListener('click', () => {
+	navbarMenu.classList.toggle('active');
+});
