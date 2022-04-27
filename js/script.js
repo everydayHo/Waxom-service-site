@@ -81,6 +81,20 @@ function onYouTubeIframeAPIReady() {
 	});
 }
 
+// video overlay
+const videoIcon = document.querySelector('.video .icon');
+const overlay = document.querySelector('#overlay');
+const videoClose = document.querySelector('.close');
+
+videoIcon.addEventListener('click', (e) => {
+	e.preventDefault();
+	overlay.classList.add('visible');
+});
+videoClose.addEventListener('click', (e) => {
+	e.preventDefault();
+	overlay.classList.remove('visible');
+});
+
 // 하단 슬라이더 bxslider사용
 $(document).ready(function () {
 	$('.post_list').bxSlider({
@@ -103,3 +117,31 @@ const navbarMenu = document.querySelector('.main-menu');
 toggleBtn.addEventListener('click', () => {
 	navbarMenu.classList.toggle('active');
 });
+
+// services 애니매이션
+
+const services = document.querySelector('.services');
+const serviceThreshold = services.offsetTop - 600;
+
+const showService = () => {
+	if (window.scrollY > serviceThreshold) {
+		services.classList.add('active');
+	}
+};
+
+document.addEventListener('scroll', _.throttle(showService, 100));
+
+// excellent mobile animate css
+const animateTarget = document.querySelectorAll('[data-move]');
+
+const eventHandler = () => {
+	animateTarget.forEach((item, index) => {
+		let targetOst = item.offsetTop - 700;
+		let targetClass = item.getAttribute('data-move');
+		if (window.scrollY > targetOst) {
+			item.classList.add(targetClass);
+		}
+	});
+};
+
+document.addEventListener('scroll', _.throttle(eventHandler, 500));
