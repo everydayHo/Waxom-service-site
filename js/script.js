@@ -110,6 +110,15 @@ $(document).ready(function () {
 	});
 });
 
+// project filter
+
+var mixer = mixitup('.project_list', {
+	animation: {
+		effects: 'fade scale(0.5)',
+		easing: 'ease-in-out',
+	},
+});
+
 // toggle
 const toggleBtn = document.querySelector('.toggle');
 const navbarMenu = document.querySelector('.main-menu');

@@ -37,6 +37,7 @@
   <!-- bxslider -->
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+	<script src="./js/mixitup.min.js"></script>
 		<link rel="stylesheet" href="./css/default.css" />
     <link rel="stylesheet" href="./css/responsive.css"/>
 		<script src="./js/script.js" defer></script>
@@ -188,6 +189,7 @@
 						value="all"
 						id="filter-all"
 						name="filter"
+						data-filter="all"
 						checked
 					/>
 					<label for="filter-all">All</label>
@@ -197,6 +199,7 @@
 						value="Web Design"
 						id="filter-web"
 						name="filter"
+						data-filter=".web"
 					/>
 					<label for="filter-web">Web Design</label>
 
@@ -205,6 +208,7 @@
 						value="Mobile Design"
 						id="filter-mobile"
 						name="filter"
+						data-filter=".mobile"
 					/>
 					<label for="filter-mobile">Mobile Design</label>
 
@@ -213,6 +217,7 @@
 						value="illustration"
 						id="filter-illust"
 						name="filter"
+						data-filter=".illust"
 					/>
 					<label for="filter-illust">illustration</label>
 
@@ -221,11 +226,12 @@
 						value="Photography"
 						id="filter-photo"
 						name="filter"
+						data-filter=".photo"
 					/>
 					<label for="filter-photo">Photography</label>
 
-					<ul class="project_list clearfix">
-						<li class="photo">
+					<ul class="project_list">
+						<li class="mix photo">
 							<div class="imgwrap">
 								<img src="./images/project_01.jpg" alt="project 01 image" />
 								<div class="hover_contents">
@@ -239,7 +245,7 @@
 							</div>
 						</li>
 
-						<li class="mobile">
+						<li class=" mix mobile">
 							<div class="imgwrap">
 								<img src="./images/project_02.jpg" alt="project 01 image" />
 								<div class="hover_contents">
@@ -253,7 +259,7 @@
 							</div>
 						</li>
 
-						<li class="photo">
+						<li class="mix photo">
 							<div class="imgwrap">
 								<img src="./images/project_03.jpg" alt="project 01 image" />
 								<div class="hover_contents">
@@ -267,7 +273,7 @@
 							</div>
 						</li>
 
-						<li class="web">
+						<li class="mix web">
 							<div class="imgwrap">
 								<img src="./images/project_04.jpg" alt="project 01 image" />
 								<div class="hover_contents">
@@ -281,7 +287,7 @@
 							</div>
 						</li>
 
-						<li class="illust">
+						<li class="mix illust">
 							<div class="imgwrap">
 								<img src="./images/project_05.jpg" alt="project 01 image" />
 								<div class="hover_contents">
@@ -295,7 +301,7 @@
 							</div>
 						</li>
 
-						<li class="web">
+						<li class="mix web">
 							<div class="imgwrap">
 								<img src="./images/project_06.jpg" alt="project 01 image" />
 								<div class="hover_contents">

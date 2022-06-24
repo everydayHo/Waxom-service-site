@@ -316,11 +316,12 @@ header nav ul li a.active {
 
 .project_list {
 	margin-top: 40px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project_list li {
 	margin: 0 30px 30px 0;
-	float: left;
 	width: 370px;
 }
 .project_list li:nth-child(3n) {
@@ -381,7 +382,7 @@ header nav ul li a.active {
 	color: #c7b299;
 }
 
-#filter-all:checked ~ .project_list li {
+/* #filter-all:checked ~ .project_list li {
 	display: block;
 	animation: fadeIn 0.3s forwards;
 }
@@ -417,7 +418,7 @@ header nav ul li a.active {
 		opacity: 0;
 		transform: scale(0);
 	}
-}
+} */
 
 .load_more {
 	text-align: center;
