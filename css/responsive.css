@@ -177,10 +177,13 @@
 		float: none;
 		text-align: center;
 	}
-	#overlay .inner {
-		width: 100%;
+	#overlay {
+		z-index: 9999;
 	}
-	#overlay .inner .close {
-		left: 3rem;
+	#overlay .inner {
+		width: 90%;
+	}
+	#overlay .inner iframe {
+		width: 100%;
 	}
 }

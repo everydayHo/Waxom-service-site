@@ -18,10 +18,10 @@ new Swiper('.swiper', {
 	spaceBetween: 0,
 	centeredSlides: true,
 	loop: true,
-	autoplay: {
-		delay: 3500,
-		disableOnInteraction: false,
-	},
+	// autoplay: {
+	// 	delay: 3500,
+	// 	disableOnInteraction: false,
+	// },
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
@@ -92,6 +92,9 @@ videoIcon.addEventListener('click', (e) => {
 });
 videoClose.addEventListener('click', (e) => {
 	e.preventDefault();
+	overlay.classList.remove('visible');
+});
+overlay.addEventListener('click', () => {
 	overlay.classList.remove('visible');
 });
 
